@@ -85,8 +85,8 @@ author:
   bio              : "Master's student, work in video quality assessment and 360° video processing area."
   location         : "MSU, Russia"
   employer         :
-  pubmed           : ""
-  googlescholar    : ""
+  pubmed           :
+  googlescholar    :
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -102,14 +102,14 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : "https://www.linkedin.com/in/eugene-lyapustin-303a6b19a/"
+  linkedin         : "https://www.linkedin.com/in/eugene-lyapustin-303a6b19a/"
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : ""
+  twitter          :
   vine             :
   weibo            :
   xing             :
