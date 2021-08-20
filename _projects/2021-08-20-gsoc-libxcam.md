@@ -1,5 +1,5 @@
 ---
-title: '![](/images/gsoc-logo.png) GSoC 2021: Equirectangular Projection (ERP) and Cubemap Projection (CMP) conversion'
+title: '![](/images/gsoc-logo-small.png) GSoC 2021: Equirectangular Projection (ERP) and Cubemap Projection (CMP) conversion'
 collection: projects
 permalink: /project/2021-08-20-gsoc-libxcam
 excerpt: 'The goal of the project was to implement conversion from equirectangular projection of 360° video to cubemap for libXcam library using GLES.'
