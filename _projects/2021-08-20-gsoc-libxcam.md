@@ -1,5 +1,5 @@
 ---
-title: 'GSoC 2021: Equirectangular Projection (ERP) and Cubemap Projection (CMP) conversion'
+title: '![](/images/gsoc-logo.png) GSoC 2021: Equirectangular Projection (ERP) and Cubemap Projection (CMP) conversion'
 collection: projects
 permalink: /project/2021-08-20-gsoc-libxcam
 excerpt: 'The goal of the project was to implement conversion from equirectangular projection of 360° video to cubemap for libXcam library using GLES.'
@@ -15,7 +15,7 @@ The library makes use of GPU to optimize algorithms speed.
 For Google Summer of Code 2021 library maintainers [proposed](https://01.org/linuxmedia/news/gsoc-2021-ideas) a project to implement equirectangular projection to cubemap conversion into stitching pipeline.
 As I have experience with both implementing various 360 video formats conversion (wrote `v360` filter for FFmpeg during GSoC 2019) and calculations via OpenGL, I decided to participate and was [chosen](https://summerofcode.withgoogle.com/projects/#4637812755791872) for the project.
 
-![Pipeline visualization](/images/gsoc-2021-vis.png)
+![](/images/gsoc-2021-vis.png)
 
 # Summer
 
@@ -33,5 +33,12 @@ When I finished with that I created a pull requested and my code was merged into
 
 # Results
 
- - Code for conversion was merged into libXcam: https://github.com/intel/libxcam/pull/778.
+ - Code for conversion was merged into libXcam: [https://github.com/intel/libxcam/pull/778](https://github.com/intel/libxcam/pull/778)
  - Functionality can be tested using `test-surround-view` executable in the library.
+
+# Acknowledgements
+
+I'd like to thank:
+
+ - my mentor, **Zong Wei** for helping and guiding me with this project,
+ - **Google** for running GSoC and creating opportunities to join open-source. 
