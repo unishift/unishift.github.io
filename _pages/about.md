@@ -1,14 +1,10 @@
 ---
 permalink: /
-title: "Welcome"
-excerpt: "About me"
+title: "Eugene Lyapustin"
+subtitle: "Video quality assessment · 360° video processing"
+layout: timeline
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
-
-Last update: August 2021
-
----
-I am a master’s student at Lomonosov Moscow State University, Graphics and Media Lab. I'm specializing in video quality assessment and 360° video processing.

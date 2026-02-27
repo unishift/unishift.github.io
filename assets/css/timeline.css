@@ -1,0 +1,253 @@
+/* ==========================================================================
+   Timeline
+   ========================================================================== */
+
+.timeline-header {
+    margin-bottom: 1.5em;
+}
+
+.timeline-header__name {
+    margin-bottom: 0.1em;
+}
+
+.timeline-header__subtitle {
+    font-size: 1.25em;
+    color: #7a8288;
+    margin-top: 0;
+}
+
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline__entry {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 2em;
+    opacity: 0;
+    transform: translateY(12px);
+    animation: timeline-fade-in 0.5s ease forwards;
+}
+
+.timeline__entry:nth-child(1) {
+    animation-delay: 0.08s;
+}
+
+.timeline__entry:nth-child(2) {
+    animation-delay: 0.16s;
+}
+
+.timeline__entry:nth-child(3) {
+    animation-delay: 0.24s;
+}
+
+.timeline__entry:nth-child(4) {
+    animation-delay: 0.32s;
+}
+
+.timeline__entry:nth-child(5) {
+    animation-delay: 0.40s;
+}
+
+.timeline__entry:nth-child(6) {
+    animation-delay: 0.48s;
+}
+
+.timeline__entry:nth-child(7) {
+    animation-delay: 0.56s;
+}
+
+.timeline__entry:nth-child(8) {
+    animation-delay: 0.64s;
+}
+
+.timeline__entry:nth-child(9) {
+    animation-delay: 0.72s;
+}
+
+.timeline__entry:nth-child(10) {
+    animation-delay: 0.80s;
+}
+
+@keyframes timeline-fade-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---- Year label ---- */
+
+.timeline__year {
+    flex: 0 0 120px;
+    min-width: 0;
+    overflow: hidden;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 4px;
+}
+
+.timeline__year span {
+    font-size: 0.75em;
+    color: #7a8288;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+/* ---- Vertical line + dot ---- */
+
+.timeline__line {
+    position: relative;
+    flex: 0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+}
+
+/* The vertical line segment */
+.timeline__line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: -2em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background-color: #e1e4e8;
+}
+
+/* Hide the line extension on the last entry */
+.timeline__entry:last-child .timeline__line::before {
+    bottom: 0;
+    height: 12px;
+}
+
+.timeline__dot {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-top: 6px;
+    border-radius: 50%;
+    background-color: #7a8288;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #e1e4e8;
+    transition: all 0.2s ease;
+}
+
+.timeline__entry:hover .timeline__dot {
+    background-color: #52adc8;
+    box-shadow: 0 0 0 2px #52adc8;
+    transform: scale(1.3);
+}
+
+/* ---- Content area (logo + text) ---- */
+
+.timeline__content {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-top: 0;
+    transition: transform 0.2s ease;
+}
+
+.timeline__entry:hover .timeline__content {
+    transform: translateX(4px);
+}
+
+.timeline__logo {
+    flex: 0 0 48px;
+    margin-right: 16px;
+    margin-top: 2px;
+}
+
+.timeline__logo img {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    object-fit: contain;
+    background-color: #fafafa;
+    padding: 4px;
+}
+
+.timeline__details {
+    flex: 1;
+}
+
+.timeline__title {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 0 0.15em;
+    line-height: 1.3;
+}
+
+.timeline__title a {
+    color: #494e52;
+    text-decoration: none;
+}
+
+.timeline__title a:hover {
+    color: #52adc8;
+}
+
+.timeline__org {
+    font-size: 0.75em;
+    color: #7a8288;
+    margin: 0 0 0.3em;
+}
+
+.timeline__description {
+    font-size: 0.75em;
+    color: #494e52;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ---- Responsive: small screens ---- */
+
+@media (max-width: 600px) {
+    .timeline__year {
+        flex: 0 0 80px;
+        min-width: 0;
+        overflow: hidden;
+        padding-right: 12px;
+    }
+
+    .timeline__line {
+        flex: 0 0 16px;
+        align-self: stretch;
+    }
+
+    .timeline__year span {
+        font-size: 0.6875em;
+    }
+
+    .timeline__line {
+        flex: 0 0 16px;
+    }
+
+    .timeline__content {
+        padding-left: 12px;
+        flex-direction: column;
+    }
+
+    .timeline__logo {
+        margin-bottom: 8px;
+    }
+
+    .timeline__logo img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .timeline__dot {
+        width: 10px;
+        height: 10px;
+        margin-top: 5px;
+    }
+}

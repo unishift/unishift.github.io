@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+{% include page__hero.html %}
+{% endif %}
+
+<div id="main" role="main">
+    {% include sidebar.html %}
+
+    <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        {% if page.title %}
+        <meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">
+        {% endif %}
+        {% if page.excerpt %}
+        <meta itemprop="description"
+            content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+
+        <div class="page__inner-wrap">
+            <header class="timeline-header">
+                {% if page.title %}<h1 class="timeline-header__name" itemprop="headline">{{ page.title | markdownify |
+                    remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+                {% if page.subtitle %}<p class="timeline-header__subtitle">{{ page.subtitle }}</p>{% endif %}
+            </header>
+
+            <section class="page__content" itemprop="text">
+                {{ content }}
+
+                <div class="timeline">
+                    {% for entry in site.data.timeline %}
+                    <div class="timeline__entry">
+                        <div class="timeline__year">
+                            <span>{{ entry.year }}</span>
+                        </div>
+                        <div class="timeline__line">
+                            <span class="timeline__dot"></span>
+                        </div>
+                        <div class="timeline__content">
+                            {% if entry.logo %}
+                            <div class="timeline__logo">
+                                <img src="{{ base_path }}/images/logos/{{ entry.logo }}" alt="{{ entry.org }}">
+                            </div>
+                            {% endif %}
+                            <div class="timeline__details">
+                                <h3 class="timeline__title">
+                                    {% if entry.link and entry.link != "" %}
+                                    <a href="{{ entry.link }}">{{ entry.title }}</a>
+                                    {% else %}
+                                    {{ entry.title }}
+                                    {% endif %}
+                                </h3>
+                                <p class="timeline__org">{{ entry.org }}</p>
+                                {% if entry.description and entry.description != "" %}
+                                <p class="timeline__description">{{ entry.description }}</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </section>
+        </div>
+    </article>
+</div>
