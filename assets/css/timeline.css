@@ -82,7 +82,7 @@
 /* ---- Year label ---- */
 
 .timeline__year {
-    flex: 0 0 120px;
+    flex: 0 0 100px;
     min-width: 0;
     overflow: hidden;
     text-align: right;
