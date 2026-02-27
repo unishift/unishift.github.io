@@ -1,6 +1,6 @@
 # Site Settings
 locale                   : "en-US"
-title                    : "Home"
+title                    : "Eugene Lyapustin"
 title_separator          : "-"
 name                     : &name "Eugene Lyapustin"
 description              : &description ""
@@ -23,8 +23,8 @@ analytics:
 author:
   name             : "Eugene Lyapustin"
   avatar           : "my-photo.jpg"
-  bio              : "Master's student, work in video quality assessment and 360° video processing area."
-  location         : "MSU, Russia"
+  bio              : "AI Engineer building image generation models at Yandex."
+  location         : "Belgrade, Serbia"
   github           : "unishift"
   linkedin         : "eugene-lyapustin-303a6b19a"
 

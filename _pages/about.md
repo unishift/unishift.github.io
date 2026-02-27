@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Eugene Lyapustin"
-subtitle: "Video quality assessment · 360° video processing"
+subtitle: "GenAI · Diffusion Models · Computer Vision"
 layout: timeline
 author_profile: true
 redirect_from:
