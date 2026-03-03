@@ -1,11 +1,18 @@
 # Career Timeline Data
 # Each entry: year, title, org, logo (in /images/logos/), description, link (optional)
 
-- year: "2023 - "
+- year: "2026 - "
+  title: "Staff Deep Learning Engineer"
+  org: "Humanoid"
+  logo: "humanoid.png"
+  description: "I'm training models for humanoid robots manipulation."
+  link: ""
+
+- year: "2023 - 2026"
   title: "Team Lead & Staff ML Engineer"
   org: "Yandex"
   logo: "yandex.png"
-  description: "I'm leading a team building YandexART text-to-image diffusion models."
+  description: "I led a team building YandexART text-to-image diffusion models."
   link: ""
 
 - year: "2021 - 2023"
